@@ -29,20 +29,11 @@ export default function Hero() {
     >
       <div className="container px-4 mx-auto z-10 relative">
         <div className="max-w-3xl mx-auto">
-          {/* <motion.h1
-            className="mb-4 text-4xl md:text-6xl font-extrabold font-headline text-center"
-            variants={itemVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            Prescripto
-          </motion.h1> */}
           <TypingEffect
-            text="Prescripto"
+            text="Prrescripto"
             speed={80}
-            className="text-6xl font-bold text-black"
+            className="text-6xl font-bold text-red-500"
           />
-
           <motion.p
             className="mt-6 text-lg md:text-xl text-muted-foreground text-center"
             variants={itemVariants}
@@ -72,7 +63,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Background Gradients */}
       <div className="absolute inset-0 -z-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background"></div>
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-blob"></div>

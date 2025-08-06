@@ -63,6 +63,13 @@ export default function Register() {
                 placeholder="ragavi@preiyan.com"
                 required
               />
+              <Label htmlFor="reg-year" className="pt-2 pb-2">Enter your Contact Number</Label>
+              <Input
+                id="mobno"
+                type="number"
+                placeholder="+91 98765XXXXX"
+                required
+              />
               <Label htmlFor="reg-year" className="pt-2 pb-2">Enter your Official Webiste (Optional)</Label>
               <Input
                 id="hospital-name"
