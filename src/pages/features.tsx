@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ShieldCheck, BadgeCheck, Trash2, Lock } from "lucide-react";
 import { motion } from "framer-motion";

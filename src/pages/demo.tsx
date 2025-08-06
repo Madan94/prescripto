@@ -1,7 +1,5 @@
 "use client";
-
-import {CldVideoPlayer} from "next-cloudinary";
-
+import React from "react";
 export function Demo() {
   return (
     <section id="demo" className="py-12 sm:py-24 bg-secondary">

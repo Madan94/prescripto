@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import React from "react";
 export function Footer() {
   return (
     <footer id="contact" className="bg-card border-t">
