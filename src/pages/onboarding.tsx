@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
@@ -5,9 +7,11 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import hospitals from "../assets/hospitals.jpg"
 import pharmacy from "../assets/pharmacy.jpg";
-import patient from "../assets/patients.jpg"
+import patient from "../assets/patients.jpg";
+import { useRouter } from "next/navigation";
 
 export default function Onboarding() {
+  const router=useRouter();
   return (
     <section id="hospitals" className="py-6 sm:py-9 bg-secondary">
       <div className="container mx-auto px-4">
@@ -24,7 +28,7 @@ export default function Onboarding() {
               </CardDescription>
             </CardContent>
             <CardFooter className="p-6 pt-0">
-              <Button size="lg" className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button size="lg" className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => router.push("/hospital")}>
                 Get Started as Hospital
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -58,7 +62,7 @@ export default function Onboarding() {
               </CardDescription>
             </CardContent>
             <CardFooter className="p-6 pt-0">
-              <Button size="lg" className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button size="lg" className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => router.push("/mobile")}>
                 Get Started as Patients
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

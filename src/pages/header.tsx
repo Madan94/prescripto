@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 p-1">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="#home" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <span className="font-extrabold text-3xl font-headline text-blue-600">Prescripto</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-m font-medium">
