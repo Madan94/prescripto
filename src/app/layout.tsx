@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Your Website',
-  description: 'Built with Next.js 14 and Tailwind',
+  title: 'Prescripto',
+  description: 'Prescripto is a web application designed to help users manage their prescriptions and medications effectively.',
 };
 
 export default function RootLayout({ children }) {

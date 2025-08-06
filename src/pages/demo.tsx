@@ -1,4 +1,6 @@
-import { PlayCircle } from "lucide-react";
+"use client";
+
+import {CldVideoPlayer} from "next-cloudinary";
 
 export function Demo() {
   return (
@@ -12,7 +14,14 @@ export function Demo() {
         </div>
         <div className="relative max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl group cursor-pointer">
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-            <PlayCircle className="w-20 h-20 text-white/80 group-hover:text-white group-hover:scale-110 transition-transform" />
+            <iframe
+              src="https://player.cloudinary.com/embed/?cloud_name=dolgceego&public_id=saas-demo_xqwolb&profile=cld-default"
+              width="1080"
+              height="1080" 
+              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+              allowFullScreen
+              className="w-full aspect-video rounded-xl"
+            ></iframe>
           </div>
         </div>
       </div>
