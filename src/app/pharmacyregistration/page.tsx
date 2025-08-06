@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -56,7 +55,7 @@ export default function AccountRecovery() {
         </form>
       </CardContent>
       <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full" onClick={() => router.push("/")}>
+        <Button type="submit" className="w-full" onClick={() => router.push("/pharmacy/dashboard")}>
           Login
         </Button>
         <div className="mt-5 flex flex-row items-center">
