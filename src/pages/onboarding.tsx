@@ -13,7 +13,7 @@ import { useRouter } from "next/navigation";
 export default function Onboarding() {
   const router=useRouter();
   return (
-    <section id="hospitals" className="py-6 sm:py-9 bg-secondary">
+    <section id="onboarding" className="py-6 sm:py-9 bg-secondary">
       <div className="container mx-auto px-4">
         <h1 className="font-extrabold text-2xl md:text-3xl pb-6 text-center">Join with Prescripto now!</h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
@@ -45,7 +45,7 @@ export default function Onboarding() {
               </CardDescription>
             </CardContent>
             <CardFooter className="p-6 pt-0">
-              <Button size="lg" className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button size="lg" className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => router.push("/pharmacyregistration")}>
                 Get Started as Pharmacy
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

@@ -4,10 +4,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import TypingEffect from "@/components/ui/typingeffect";
 
-const DynamicHero3D = dynamic(() => import("./hero-3d").then((mod) => mod.Hero3D), {
-  ssr: false,
-});
+// const DynamicHero3D = dynamic(() => import("./hero-3d").then((mod) => mod.Hero3D), {
+//   ssr: false,
+// });
 
 export default function Hero() {
   const itemVariants = {
@@ -28,14 +29,19 @@ export default function Hero() {
     >
       <div className="container px-4 mx-auto z-10 relative">
         <div className="max-w-3xl mx-auto">
-          <motion.h1
+          {/* <motion.h1
             className="mb-4 text-4xl md:text-6xl font-extrabold font-headline text-center"
             variants={itemVariants}
             initial="hidden"
             animate="visible"
           >
             Prescripto
-          </motion.h1>
+          </motion.h1> */}
+          <TypingEffect
+            text="Prescripto"
+            speed={80}
+            className="text-6xl font-bold text-black"
+          />
 
           <motion.p
             className="mt-6 text-lg md:text-xl text-muted-foreground text-center"
@@ -57,7 +63,7 @@ export default function Hero() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
-              <Link href="#get-started">Get started for free</Link>
+              <Link href="#onboarding">Get started for free</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
               <Link href="#features">Learn More</Link>
