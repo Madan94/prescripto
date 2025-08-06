@@ -16,7 +16,7 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
-export function Header() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

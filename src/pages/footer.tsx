@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-export function Footer() {
+export default function Footer() {
   return (
     <footer id="contact" className="bg-card border-t">
       <div className="container mx-auto px-4 py-8">

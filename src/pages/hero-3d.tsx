@@ -65,7 +65,7 @@ function Electron({ position, speed, angle, radius, axis }: { position: THREE.Ve
   );
 }
 
-export function Hero3D() {
+export default function Hero3D() {
   return (
     <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
       <ambientLight intensity={0.5} />

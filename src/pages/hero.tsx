@@ -9,7 +9,7 @@ const DynamicHero3D = dynamic(() => import("./hero-3d").then((mod) => mod.Hero3D
   ssr: false,
 });
 
-export function Hero() {
+export default function Hero() {
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {

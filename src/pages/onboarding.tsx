@@ -7,7 +7,7 @@ import hospitals from "../assets/hospitals.jpg"
 import pharmacy from "../assets/pharmacy.jpg";
 import patient from "../assets/patients.jpg"
 
-export function Onboarding() {
+export default function Onboarding() {
   return (
     <section id="hospitals" className="py-6 sm:py-9 bg-secondary">
       <div className="container mx-auto px-4">

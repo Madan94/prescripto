@@ -27,7 +27,7 @@ const features = [
   },
 ];
 
-export function Features() {
+export default function Features() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
