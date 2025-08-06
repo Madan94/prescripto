@@ -1,10 +1,10 @@
-import { Header } from "@/pages/header";
-import { Hero } from "@/pages/hero";
-import { UserCategories } from "@/pages/user-categories";
-import { Features } from "@/pages/features";
-import { Onboarding } from "@/pages/onboarding";
-import { Demo } from "@/pages/demo";
-import { Footer } from "@/pages/footer";
+import Header from "@/pages/header";
+import Hero from "@/pages/hero";
+import UserCategories from "@/pages/user-categories";
+import Features from "@/pages/features";
+import Onboarding from "@/pages/onboarding";
+import Demo from "@/pages/demo";
+import Footer from "@/pages/footer";
 
 export default function Home() {
   return (
