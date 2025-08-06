@@ -44,7 +44,7 @@ export default function AccountRecovery() {
       newOtp[idx] = value;
       setOtp(newOtp);
       if (value && idx < 5) {
-        const next = document.getElementById(otp-${idx + 1});
+        const next = document.getElementById(`otp-${idx + 1}`);
         if (next) (next as HTMLInputElement).focus();
       }
     };
@@ -98,7 +98,7 @@ export default function AccountRecovery() {
                       {otp.map((digit, idx) => (
                         <Input
                           key={idx}
-                          id={otp-${idx}}
+                          id={`otp-${idx}`}
                           type="text"
                           inputMode="numeric"
                           maxLength={1}

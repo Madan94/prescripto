@@ -1,23 +1,17 @@
 'use client'
 
 import React from 'react'
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import { useRouter } from "next/navigation"
 import Link from "next/link";
-import Header from "@/pages/header";
+import Sidebar from '@/components/sidebar'
+import DashboardContent from '../pharmacyhome/page'
 
 function PharmacyDashboard() {
     const router = useRouter();
   return (
-    <section className="container h-screen">
-      <Header/>
+    <section className="flex h-screen">
+      <Sidebar/>
+      <DashboardContent/>
     </section>
   )
 }
