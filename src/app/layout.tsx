@@ -1,6 +1,11 @@
+// app/layout.tsx
+'use client'
+
 import './globals.css';
 import { Poppins } from 'next/font/google';
-import type { Metadata } from 'next'
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { baselightTheme } from "@/utils/theme/DefaultColors";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -9,15 +14,15 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-export const metadata = {
-  title: 'Prescripto',
-  description: 'Prescripto is a web application designed to help users manage their prescriptions and medications effectively.',
-};
-
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider theme={baselightTheme}>
+          <CssBaseline />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

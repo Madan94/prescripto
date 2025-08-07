@@ -2,8 +2,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { PersonStanding, NotebookPen, LocateFixedIcon, CalendarDays, Wallet } from "lucide-react"
-import MetamaskLogo from "@/components/ui/metamasklogo"
 import QrScanner from "@/components/ui/qrscanner"
 import WalletConnect from "@/app/providers"
 import React from "react"

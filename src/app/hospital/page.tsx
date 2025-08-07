@@ -59,7 +59,7 @@ export default function AccountRecovery() {
         </form>
       </CardContent>
       <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full" onClick={() => router.push("/hospital/dashboard")}>
+        <Button type="submit" className="w-full" onClick={() => router.push("/dashboard")}>
           Login
         </Button>
         <div className="mt-5 flex flex-row items-center">

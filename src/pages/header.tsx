@@ -38,7 +38,7 @@ export default function Header() {
         </nav>
         <div className="hidden md:flex p-7">
           <Button asChild>
-            <Link href="/login">Contact us</Link>
+            <Link href="/">Contact us</Link>
           </Button>
         </div>
         <div className="md:hidden">
@@ -53,7 +53,7 @@ export default function Header() {
               <div className="flex flex-col space-y-4">
                 <Link href="#home" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
                   <Logo className="h-6 w-6 text-primary" />
-                  <span className="font-bold">RxChain</span>
+                  <span className="font-bold">Prescripto</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map((link) => (
