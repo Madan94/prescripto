@@ -6,7 +6,6 @@ import Features from "@/pages/features";
 import Onboarding from "@/pages/onboarding";
 import Demo from "@/pages/demo";
 import Footer from "@/pages/footer";
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">

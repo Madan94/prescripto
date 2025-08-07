@@ -2,9 +2,11 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { PersonStanding, NotebookPen, LocateFixedIcon, CalendarDays } from "lucide-react"
+import { PersonStanding, NotebookPen, LocateFixedIcon, CalendarDays, Wallet } from "lucide-react"
 import MetamaskLogo from "@/components/ui/metamasklogo"
 import QrScanner from "@/components/ui/qrscanner"
+import WalletConnect from "@/app/providers"
+import React from "react"
 
 export default function DashboardContent() {
     
@@ -17,42 +19,30 @@ export default function DashboardContent() {
                         Pharmacy Dashboard
                     </h2>
                     <p className="text-sm text-gray-500 dark:text-gray-300">
-                        Have a nice day at work
+                        Simplified Prescriptions at Single Place
                     </p>
                 </div>
                 <Button className="bg-purple-500 hover:bg-purple-600 text-white rounded-lg">
-                    + Add Patient
+                    Logout
                 </Button>
             </div>
 
-            <div className="grid grid-cols-5 gap-4 mb-8">
-                <ReportCard icon={<LocateFixedIcon />} label="Address" count='No.10, Prieyen theru' />
-                <ReportCard icon={<NotebookPen />} label="Documents" count='View license' />
-                <ReportCard icon={<CalendarDays />} label="In-days" count='Open Days' />
-                <ReportCard icon={<PersonStanding />} label="Your profile" count='Profile' />
-            </div>
-
-            <div className="bg-gray-100 bg-purple-200 rounded-xl p-4 mb-6">
+            <div className="bg-yellow-400 rounded-xl p-8 mb-6 w-2/4">
                 <h3 className="text-lg font-semibold text-gray-700 dark:text-white mb-2">
-                    Connect your Metamask Wallet
+                    Connect your Crypto Wallet
                 </h3>
-                <div className="flex gap-4 overflow-x-auto pb-2">
-                    <h3 className="text-sm text-gray-500 dark:text-gray-300">Your Wallet Address</h3>
-                    <span className="text-sm font-mono text-gray-800 dark:text-white">  0x1234567890abcdef1234567890abcdef12345678</span>
-                    <MetamaskLogo />
-                </div>
+                <WalletConnect/>
             </div>
-            <div className="bg-gray-100 bg-purple-200 rounded-xl p-4 mb-6">
+            <div className="bg-gray-100 rounded-xl p-4 mb-6">
                 <h3 className="text-lg font-semibold text-gray-700 dark:text-white mb-2">
                     Your Profile
                 </h3>
                 <div className="flex gap-4 overflow-x-auto pb-2">
                     <h3 className="text-sm text-gray-500 dark:text-gray-300">Access and</h3>
                     <span className="text-sm font-mono text-gray-800 dark:text-white">edit your Porfile here</span>
-                    
                 </div>
             </div>
-            <div className="bg-gray-100 bg-purple-200 rounded-xl p-4">
+            <div className="bg-gray-100 rounded-xl p-4">
                 <h3 className="text-lg font-semibold text-gray-700 dark:text-white mb-2">
                     Scan QR Code
                 </h3>
@@ -92,7 +82,7 @@ function ReportCard({ icon, label, count, isPlaceholder = false }: {
 // Schedule Item Component
 function ScheduleItem({ date, label, color }: { date: string; label: string; color: string }) {
     return (
-        <div className="min-w-[140px] p-3 rounded-lg text-white" style={{ backgroundColor: color }}>
+        <div className="min-w-[140px] p-3 rounded-lg text-white bg-white">
             <p className="text-sm font-medium">{date}</p>
             <p className="text-xs">{label}</p>
         </div>

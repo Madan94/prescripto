@@ -14,7 +14,7 @@ import Link from "next/link";
 import Header from "@/pages/header";
 
 export default function AccountRecovery() {
-    const router = useRouter();
+  const router = useRouter();
   return (
     <section className="container h-screen">
       <Header/>

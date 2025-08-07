@@ -1,7 +1,7 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode:true,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  webpack:(config)=>{
+    config.resolve.fallback={fs:false,net:false,tls:false};
+    config.externals.push("piano-prety","lokijs","encoding");
+    return config;
+  }
 };
 
 export default nextConfig;
