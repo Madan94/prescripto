@@ -4,8 +4,8 @@ import {
   IconLayoutDashboard,
   IconLogin,
   IconMoodHappy,
-  IconTypography,
-  IconUserPlus,
+  IconQrcode,
+  IconWallet
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
@@ -20,7 +20,7 @@ const Menuitems = [
     id: uniqueId(),
     title: "Dashboard",
     icon: IconLayoutDashboard,
-    href: "/dashboard",
+    href: "/PharmacyDashboard",
   },
   {
     navlabel: true,
@@ -28,15 +28,15 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: "Add New Doctors",
-    icon: IconTypography,
-    href: "/utilities/typography",
+    title: "Scan QR Code",
+    icon: IconQrcode,
+    href: "/PharmacyDashboard/utilities/qrcode",
   },
   {
     id: uniqueId(),
-    title: "Manage Doctors",
+    title: "Live Prescriptions",
     icon: IconCopy,
-    href: "/utilities/shadow",
+    href: "/PharmacyDashboard/utilities/prescription",
   },
   {
     navlabel: true,
@@ -46,13 +46,13 @@ const Menuitems = [
     id: uniqueId(),
     title: "Manage Prescriptions",
     icon: IconLogin,
-    href: "/utilities/prescription",
+    href: "/PharmacyDashboard/utilities/manageprescription",
   },
   {
     id: uniqueId(),
-    title: "Insurance Agent",
-    icon: IconUserPlus,
-    href: "/",
+    title: "Crypto Wallet",
+    icon: IconWallet,
+    href: "/PharmacyDashboard/utilities/cryptowallet",
   },
   {
     navlabel: true,
