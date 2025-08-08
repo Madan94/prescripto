@@ -1,7 +1,9 @@
-const Loading = () =>{
-    return(
-        <div>Dash Loading</div>
+import React from 'react'
+import { CircularProgress } from '@mui/material'
+function loading() {
+    return (
+        <CircularProgress />
     )
 }
 
-export default Loading;
+export default loading

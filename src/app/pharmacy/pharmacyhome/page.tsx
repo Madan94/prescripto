@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import QrScanner from "@/components/ui/qrscanner"
+import QrScanner from "@/app/PharmacyDashboard/utilities/qrcode/page"
 import WalletConnect from "@/app/providers"
 import React from "react"
 

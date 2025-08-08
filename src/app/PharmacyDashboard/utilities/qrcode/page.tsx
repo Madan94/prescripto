@@ -4,7 +4,7 @@ import { SetStateAction, useEffect, useRef, useState } from "react";
 import { Html5Qrcode } from "html5-qrcode";
 import { Button } from "@/components/ui/button";
 
-export default function QrScanner() {
+export default function Qrcode() {
   const [scannedResult, setScannedResult] = useState<string | null>(null);
   const [cameraStarted, setCameraStarted] = useState(false);
   const scannerRef = useRef<HTMLDivElement>(null);
@@ -85,3 +85,4 @@ export default function QrScanner() {
     </div>
   );
 }
+

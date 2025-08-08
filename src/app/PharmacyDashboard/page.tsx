@@ -8,7 +8,7 @@ import ProductPerformance from '@/app/PharmacyDashboard/components/dashboard/Pro
 import Blog from '@/app/PharmacyDashboard/components/dashboard/Blog';
 import MonthlyEarnings from '@/app/PharmacyDashboard/components/dashboard/MonthlyEarnings';
 
-const Dashboard = () => {
+const PharmacyDashboard = () => {
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
       <Box>
@@ -57,4 +57,4 @@ const Dashboard = () => {
   );
 }
 
-export default Dashboard;
+export default PharmacyDashboard;

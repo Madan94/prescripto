@@ -2,7 +2,7 @@ import React from 'react'
 import { CircularProgress } from '@mui/material'
 function loading() {
     return (
-        <CircularProgress className='self-center'/>
+        <CircularProgress />
     )
 }
 
