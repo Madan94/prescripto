@@ -46,7 +46,7 @@ const Menuitems = [
     id: uniqueId(),
     title: "Manage Prescriptions",
     icon: IconLogin,
-    href: "/dashboard",
+    href: "/PharmacyDashboard/utilities/manageprescription",
   },
   {
     id: uniqueId(),
