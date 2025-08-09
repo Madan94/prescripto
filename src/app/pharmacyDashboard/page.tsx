@@ -2,7 +2,7 @@
 
 import PageContainer from "./components/container/PageContainer";
 
-const PharmacyDashboard = () => {
+const pharmacyDashboard = () => {
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
       <h1>Main Dashboard Contents will Render here!</h1>
@@ -10,4 +10,4 @@ const PharmacyDashboard = () => {
   );
 }
 
-export default PharmacyDashboard;
+export default pharmacyDashboard;

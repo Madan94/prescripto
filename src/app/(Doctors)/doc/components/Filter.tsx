@@ -4,28 +4,47 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import axios from "axios";
 
-export default function Filter() {
+export default function Filter({ onHospitalSelect }: { onHospitalSelect: (name: string) => void }) {
   const [hospital, setHospital] = React.useState('');
+  const [hospitalList, setHospitalList] = React.useState<{ name: string }[]>([]);
 
   const handleChange = (event: SelectChangeEvent) => {
-    setHospital(event.target.value as string);
+    const selected = event.target.value as string;
+    setHospital(selected);
+    onHospitalSelect(selected);
   };
+
+  React.useEffect(() => {
+    const fetchHospitals = async () => {
+      try {
+        const res = await axios.get("http://localhost:5050/doctor/auth/getHospital");
+        if (res.data?.hospitalNames) {
+          setHospitalList(res.data.hospitalNames);
+        }
+      } catch (error) {
+        console.error("Error fetching hospitals:", error);
+      }
+    };
+    fetchHospitals();
+  }, []);
 
   return (
     <Box sx={{ minWidth: 180 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Hospital</InputLabel>
+        <InputLabel id="hospital-select-label">Hospital</InputLabel>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
+          labelId="hospital-select-label"
+          id="hospital-select"
           value={hospital}
-          label="hospital"
           onChange={handleChange}
         >
-          <MenuItem value={"Apollo"}>Apollo Hospitals</MenuItem>
-          <MenuItem value={"Cauvery"}>Cauvery Hospital</MenuItem>
-          <MenuItem value={"KMC"}>KMC Hospitals</MenuItem>
+          {hospitalList.map((h, index) => (
+            <MenuItem key={index} value={h.name}>
+              {h.name}
+            </MenuItem>
+          ))}
         </Select>
       </FormControl>
     </Box>

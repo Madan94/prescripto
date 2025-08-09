@@ -28,13 +28,13 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: "Add New Doctors",
+    title: "Add Prescriptions",
     icon: IconTypography,
-    href: "/utilities/typography",
+    href: "/doc/components/addprescription",
   },
   {
     id: uniqueId(),
-    title: "Manage Doctors",
+    title: "Live Prescriptions",
     icon: IconCopy,
     href: "/utilities/shadow",
   },
@@ -50,9 +50,9 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: "Insurance Agent",
+    title: "Manage Crypto Wallet",
     icon: IconUserPlus,
-    href: "/",
+    href: "/doc/components/cryptowallet",
   },
   {
     navlabel: true,
@@ -62,13 +62,13 @@ const Menuitems = [
     id: uniqueId(),
     title: "Settings",
     icon: IconMoodHappy,
-    href: "/icons",
+    href: "/",
   },
   {
     id: uniqueId(),
     title: "Ask your Query",
     icon: IconAperture,
-    href: "/sample-page",
+    href: "/",
   },
 
 ];

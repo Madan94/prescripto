@@ -19,9 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={poppins.variable}>
       <body>
         <ThemeProvider theme={baselightTheme}>
-          <CssBaseline />
-          {children}
-        </ThemeProvider>
+            <CssBaseline />
+              {children}
+            </ThemeProvider>
       </body>
     </html>
   );

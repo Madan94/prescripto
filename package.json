@@ -50,6 +50,7 @@
     "@radix-ui/react-toast": "^1.2.6",
     "@radix-ui/react-tooltip": "^1.1.8",
     "@rainbow-me/rainbowkit": "^2.2.8",
+    "@rainbow-me/rainbowkit-siwe-next-auth": "^0.5.0",
     "@react-jvectormap/core": "^1.0.4",
     "@react-jvectormap/world": "^1.1.2",
     "@react-three/drei": "^9.106.0",

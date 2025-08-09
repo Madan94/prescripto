@@ -116,7 +116,7 @@ export default function Register() {
       // Redirect after 2 seconds
       setTimeout(() => {
         router.push("/hospital");
-      }, 2000);
+      }, 1000);
 
     } catch (error: unknown) {
       if (error && typeof error === 'object' && 'response' in error) {

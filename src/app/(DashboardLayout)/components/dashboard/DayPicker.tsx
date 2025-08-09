@@ -2,15 +2,12 @@
 import React from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { toast } from "sonner"
 import { z } from "zod"
 
-import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -18,34 +15,13 @@ import {
 } from "@/components/ui/form"
 
 const items = [
-  {
-    id: "sunday",
-    label: "Sunday",
-  },
-  {
-    id: "monday",
-    label: "Monday",
-  },
-  {
-    id: "tuesday",
-    label: "Tuesday",
-  },
-  {
-    id: "wednesday",
-    label: "Wednesday",
-  },
-  {
-    id: "thursday",
-    label: "Thursday",
-  },
-  {
-    id: "friday",
-    label: "Friday",
-  },
-  {
-    id: "saturday",
-    label: "Saturday",
-  },
+  { id: "sunday", label: "Sunday" },
+  { id: "monday", label: "Monday" },
+  { id: "tuesday", label: "Tuesday" },
+  { id: "wednesday", label: "Wednesday" },
+  { id: "thursday", label: "Thursday" },
+  { id: "friday", label: "Friday" },
+  { id: "saturday", label: "Saturday" },
 ] as const
 
 const FormSchema = z.object({
@@ -54,27 +30,24 @@ const FormSchema = z.object({
   }),
 })
 
-export default function DayPicker() {
+// Define props for DayPicker component
+type DayPickerProps = {
+  initialDays?: string[];
+  onDaysChange: (selectedDays: string[]) => void;
+};
+
+// Update the component signature to accept props
+export default function DayPicker({ initialDays = [], onDaysChange }: DayPickerProps) {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      items: ["recents", "home"],
+      items: initialDays,
     },
   })
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    toast("You submitted the following values", {
-      description: (
-        <pre className="mt-2 w-[320px] rounded-md bg-neutral-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    })
-  }
-
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <div className="space-y-4">
         <FormField
           control={form.control}
           name="items"
@@ -88,40 +61,34 @@ export default function DayPicker() {
                   key={item.id}
                   control={form.control}
                   name="items"
-                  render={({ field }) => {
-                    return (
-                      <FormItem
-                        key={item.id}
-                        className="flex flex-row items-center gap-2"
-                      >
-                        <FormControl>
-                          <Checkbox
-                            checked={field.value?.includes(item.id)}
-                            onCheckedChange={(checked) => {
-                              return checked
-                                ? field.onChange([...field.value, item.id])
-                                : field.onChange(
-                                    field.value?.filter(
-                                      (value) => value !== item.id
-                                    )
-                                  )
-                            }}
-                          />
-                        </FormControl>
-                        <FormLabel className="text-sm font-normal">
-                          {item.label}
-                        </FormLabel>
-                      </FormItem>
-                    )
-                  }}
+                  render={({ field }) => (
+                    <FormItem key={item.id} className="flex flex-row items-center gap-2">
+                      <FormControl>
+                        <Checkbox
+                          checked={field.value?.includes(item.id)}
+                          onCheckedChange={(checked) => {
+                            const newValue = checked
+                              ? [...field.value, item.id]
+                              : field.value?.filter((value) => value !== item.id) || [];
+                            
+                            field.onChange(newValue);
+                            // Call onDaysChange directly here
+                            onDaysChange(newValue);
+                          }}
+                        />
+                      </FormControl>
+                      <FormLabel className="text-sm font-normal">
+                        {item.label}
+                      </FormLabel>
+                    </FormItem>
+                  )}
                 />
               ))}
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Confirm Availability</Button>
-      </form>
+      </div>
     </Form>
   )
 }

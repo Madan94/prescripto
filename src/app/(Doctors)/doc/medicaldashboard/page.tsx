@@ -1,6 +1,6 @@
 'use client'
 import { Grid, Box } from '@mui/material';
-import PageContainer from '@/app/(Doctors)/doc/components/container/PageContainer';
+import PageContainer from '../components/container/PageContainer';
 
 const Dashboard = () => {
   return (

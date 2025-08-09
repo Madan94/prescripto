@@ -1,38 +1,50 @@
-import { Button } from "@/components/ui/button"
+"use client";
+
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
-export function DoctorCard() {
+export type Doctor = {
+  name: string;
+  nmrNumber: string;
+  email: string;
+  PhoneNumber: string;
+  specialization: string;
+  availability: string;
+};
+
+type DoctorCardProps = {
+  doctor: Doctor;
+};
+
+export function DoctorCard({ doctor }: DoctorCardProps) {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader>
-        <p className="font-bold text-1.5xl">Doctor Name: Saajid Ahamed</p>
+        <p className="font-bold text-1.5xl">Doctor Name: {doctor.name}</p>
         <CardDescription>
-          Medical Practicioner No: 17854376XXXXXX
+          Medical Practitioner No: {doctor.nmrNumber}
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form>
-          <div className="flex flex-col gap-6">
-            <div className="grid gap-1">
-              <p className="mb-2">Email: saajidahamed@gmail.com</p>
-              <p className="mb-2">Contact No: +91 88071XXXXX</p>
-              <p className="mb-2">Specialist: General Surgery, Optometry </p>
-            </div>
+        <div className="flex flex-col gap-6">
+          <div className="grid gap-1">
+            <p className="mb-2">Email: {doctor.email}</p>
+            <p className="mb-2">Contact No: {doctor.PhoneNumber}</p>
+            <p className="mb-2">Specialist: {doctor.specialization}</p>
           </div>
-        </form>
+        </div>
       </CardContent>
       <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full">
-          Available Days - Sun - Thu - Fri - Sat
-        </Button>
+        <div className="flex flex-wrap bg-blue-500 p-4 rounded-md">
+          <p className="font-medium text-white">Available Days : {doctor.availability}</p>
+        </div>
       </CardFooter>
     </Card>
-  )
+  );
 }

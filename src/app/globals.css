@@ -5,6 +5,7 @@
 body {
   box-sizing: border-box;
   font-family: var(--font-poppins);
+  font-family: 'poppins','sans-serif';
 }
 
 html{

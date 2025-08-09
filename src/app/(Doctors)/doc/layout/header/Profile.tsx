@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   Avatar,
   Box,
@@ -14,8 +15,17 @@ import {
 import { IconListCheck, IconMail, IconUser } from "@tabler/icons-react";
 
 const Profile = () => {
-  const [anchorEl2, setAnchorEl2] = useState(null);
-  const handleClick2 = (event: any) => {
+  const [anchorEl2, setAnchorEl2] = useState<HTMLElement | null>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token') || localStorage.getItem('pharmacyToken') || localStorage.getItem('hospitalToken');
+    if (!token) {
+      router.push('/');
+    }
+  }, [router]);
+
+  const handleClick2 = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl2(event.currentTarget);
   };
   const handleClose2 = () => {
@@ -46,9 +56,6 @@ const Profile = () => {
           }}
         />
       </IconButton>
-      {/* ------------------------------------------- */}
-      {/* Message Dropdown */}
-      {/* ------------------------------------------- */}
       <Menu
         id="msgs-menu"
         anchorEl={anchorEl2}
@@ -69,25 +76,19 @@ const Profile = () => {
           </ListItemIcon>
           <ListItemText>My Profile</ListItemText>
         </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <IconMail width={20} />
-          </ListItemIcon>
-          <ListItemText>My Account</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <IconListCheck width={20} />
-          </ListItemIcon>
-          <ListItemText>My Tasks</ListItemText>
-        </MenuItem>
         <Box mt={1} py={1} px={2}>
           <Button
-            href="/authentication/login"
+            href="/hospital"
             variant="outlined"
             color="primary"
             component={Link}
             fullWidth
+            onClick={() => {
+              localStorage.removeItem('token');
+              localStorage.removeItem('pharmacyToken');
+              localStorage.removeItem('hospitalToken');
+              router.push('/');
+            }}
           >
             Logout
           </Button>

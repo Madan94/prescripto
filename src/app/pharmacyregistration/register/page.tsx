@@ -115,7 +115,7 @@ export default function Register() {
 
       // Redirect after 2 seconds
       setTimeout(() => {
-        router.push("/pharmacy/dashboard");
+        router.push("/pharmacyregistration");
       }, 1000);
 
     } catch (error: unknown) {

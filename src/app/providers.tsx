@@ -5,6 +5,7 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { WagmiProvider } from 'wagmi';
 import {
+  avalanche,
   mainnet,
   polygon,
   optimism,
@@ -21,7 +22,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 const config = getDefaultConfig({
   appName: 'My RainbowKit App',
   projectId: '322a547413a527fe6601236be62479a4',
-  chains: [mainnet, polygon, optimism, arbitrum, base],
+  chains: [avalanche, mainnet, polygon, optimism, arbitrum, base],
   ssr: true, 
 });
 
@@ -30,8 +31,8 @@ export default function WalletConnect(){
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>
-          <ConnectButton/>
+        <RainbowKitProvider coolMode >
+          <ConnectButton />
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>

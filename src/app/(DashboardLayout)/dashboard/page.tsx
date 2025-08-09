@@ -8,7 +8,7 @@ const Dashboard = () => {
     <PageContainer title="Dashboard" description="this is Dashboard">
       <Box>
         <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="font-bold text-3xl">Main Dashboard Componenst will Shown here</h1>
+        <h1 className="font-bold text-3xl">Main Dashboard Components will Shown here</h1>
         </div>
       </Box>
     </PageContainer>

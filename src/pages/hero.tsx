@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="container px-4 mx-auto z-10 relative">
         <div className="max-w-3xl mx-auto">
           <TypingEffect
-            text="Prrescripto"
+            text="Zyypher"
             speed={80}
             className="text-6xl font-bold text-red-500"
           />

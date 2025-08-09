@@ -50,9 +50,9 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: "Insurance Agent",
+    title: "Manage Crypto Wallet",
     icon: IconUserPlus,
-    href: "/",
+    href: "/utilities/cryptowallet",
   },
   {
     navlabel: true,
@@ -62,13 +62,13 @@ const Menuitems = [
     id: uniqueId(),
     title: "Settings",
     icon: IconMoodHappy,
-    href: "/icons",
+    href: "/",
   },
   {
     id: uniqueId(),
     title: "Ask your Query",
     icon: IconAperture,
-    href: "/sample-page",
+    href: "/",
   },
 
 ];
