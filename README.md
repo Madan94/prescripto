@@ -1,65 +1,66 @@
 # **Zypher** - An UPI App to manage your Crypto Payments
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Madan94/blockpay1)
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue)](https://www.linkedin.com/in/madhan-fullstack-developer/)
-
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue)](https://www.linkedin.com/in/madhan-fullstack-developer/)
-
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue)](https://www.linkedin.com/in/prieyanmn2007/)
-
-
-
-# Zypherits not
-
-## Crypto-Powered Secure Prescription Management System
-
-Zypher aims to revolutionize the traditional prescription process by integrating blockchain technology. It provides a decentralized platform where medical prescriptions are securely stored and managed, ensuring authenticity and preventing unauthorized alterations.
-
-## Key Features
-
-- **Blockchain Integration:**  
-  Utilizes blockchain to store prescription data, ensuring tamper-proof records.
-
-- **User Authentication:**  
-  Employs secure login mechanisms to protect user data.
-
-- **Prescription Management:**  
-  Allows healthcare professionals to generate, view, and manage prescriptions efficiently.
-
-- **Patient Records:**  
-  Enables patients to access their prescription history securely.
----
 
 ---
 
-## 📄 **Documentation**
+## Secure Digital Prescription System
 
-For more detailed information, please refer to the **project pitchdeck**:  
+Zypher aims to revolutionize prescriptions by creating a **secure, paperless prescription system**:
 
-[Pitchdeck](https://www.canva.com/design/DAGcgiI1DFA/pWRbtPzwvmVYTBhPnQGPXA/edit?utm_content=DAGcgiI1DFA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+- Doctors generate prescriptions using their **digital signature**, preventing forgery and ensuring authenticity.  
+- Each prescription is stored on a **blockchain** for immutability and assigned a **unique ID/QR code**.  
+- Patients can access their prescriptions anytime via a secure mobile app.  
+- Pharmacies can instantly verify prescription authenticity using the unique ID/QR code, helping prevent forged or duplicate medicine dispensing.
 
 ---
 
-## 🎯 **Project Vision**
+## Content Overview <a name="content-overview"></a>
+
+- [Project Vision](#project-vision)  
+- [Technologies Used](#technologies-used)  
+- [Getting Started](#getting-started)  
+- [Project Overview](#project-overview)  
+- [Key Features](#key-features)  
+- [Team Zypher](#team-zypher)  
+- [Hackathons and Events](#hackathons-and-events)  
+- [License](#license)  
+- [Contact](#contact)  
+
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+
+---
+
+## Project Vision <a name="project-vision"></a>
 
 Our vision is to create a secure, transparent, and decentralized prescription management system that empowers doctors and patients with trust and authenticity through blockchain technology.
 
----
-
-## ⚙️ **Technologies Used**
-
-- **Blockchain:** Solidity avalanche C-chain
-- **Frontend:** Next.js, React.js, Tailwind CSS  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
-- **Deployment:** Hosted on cloud platforms (e.g., Render.com or similar)  
-- **Other:** Web3 integration for wallet-based authentication and signing  
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
 
 ---
 
-## 🛠 **Getting Started**
+## Technologies Used <a name="technologies-used"></a>
 
-### 🛠️ **Installation**
+| Technology         | Logo / Badge                                                                                 |
+|--------------------|---------------------------------------------------------------------------------------------|
+| **Blockchain**     | ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white)     |
+|                    | ![Avalanche](https://img.shields.io/badge/Avalanche-E84142?logo=avalanche&logoColor=white)  |
+| **Frontend**       | ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)        |
+|                    | ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)              |
+|                    | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwind-css&logoColor=white) |
+| **Backend**        | ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)        |
+|                    | ![Express](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)     |
+| **Database**       | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)        |
+|                    | ![IPFS](https://img.shields.io/badge/IPFS-000000?logo=ipfs&logoColor=white)                 |
+| **Deployment**     | ![Render](https://img.shields.io/badge/Render-19232D?logo=render&logoColor=white)            |
+| **Other**          | ![Web3](https://img.shields.io/badge/Web3-FF6C00?logo=ethereum&logoColor=white)             |
+
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+
+---
+
+## Getting Started <a name="getting-started"></a>
+
+### Installation
 
 1. **Clone the Repository**
     ```bash
@@ -76,17 +77,20 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
     ```bash
     npm run dev
     ```
-4. Your application will be running on [http://localhost:3000](http://localhost:3000) 🚀
+
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
 
 ---
 
-## 📖 **Project Overview**
+## Project Overview <a name="project-overview"></a>
 
 Zypher leverages blockchain technology to ensure the security and integrity of medical prescriptions. It provides a decentralized platform where doctors can generate, sign, and manage prescriptions while patients can securely access their medical records.
 
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+
 ---
 
-## 🔑 **Key Features**
+## Key Features <a name="key-features"></a>
 
 - **Blockchain Integration:**  
   Utilizes blockchain to store prescription data, ensuring tamper-proof records.
@@ -100,34 +104,48 @@ Zypher leverages blockchain technology to ensure the security and integrity of m
 - **Patient Records:**  
   Enables patients to access their prescription history securely.
 
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+
 ---
 
-## 👥 **Team Zypher**
+## Team Zypher <a name="team-zypher"></a>
 
 - **Madhanraj M** – Team Lead, Full Stack & Web3 Developer  
-- **Other team members** 
+- **Prieyan MN** – Backend Developer  
+- **Madesh Vaithya H** – Frontend & App Developer  
+- **Rishika K** – Research & Development  
+
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
 
 ---
 
-## 🏆 **Hackathons and Events**
+## Hackathons and Events <a name="hackathons-and-events"></a>
 
 - Participated in **Avalanche Team1 Web3 Hackathon** at MCC Innovation Park, Chennai.
 
----
-
-## 📜 **License**
-
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Madan94/prescripto/blob/main/LICENSE) file for details.
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
 
 ---
 
-## 📞 **Contact**
+## License <a name="license"></a>
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Madan94/zypher/blob/main/LICENSE) file for details.
+
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+
+---
+
+## Contact <a name="contact"></a>
 
 For any inquiries or support, feel free to reach out:
 
 - **Email:** [madhanwebdev94@gmail.com](mailto:madhanwebdev94@gmail.com)  
-- **LinkedIn:** [Madhanraj M](https://www.linkedin.com/in/madhan-fullstack-developer/)
+- **LinkedIn:**  
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/madhan-fullstack-developer/)  
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/prieyanmn2007/)
+
+[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
 
 ---
 
-*Made with ❤️ by Team Zypher.*
+*Made with ❤️ by Team FSociety🔥.*
