@@ -1,4 +1,4 @@
-# **Zypher** - An UPI App to manage your Crypto Payments
+# **Zypher** - Prescriptions on Blockchain
 
 
 ---
