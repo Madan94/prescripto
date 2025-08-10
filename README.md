@@ -21,12 +21,12 @@ Zypher aims to revolutionize prescriptions by creating a **secure, paperless pre
 - [Getting Started](#getting-started)  
 - [Project Overview](#project-overview)  
 - [Key Features](#key-features)  
-- [Team Zypher](#team-zypher)  
+- [Team Fsociety](#team-zypher)  
 - [Hackathons and Events](#hackathons-and-events)  
 - [License](#license)  
 - [Contact](#contact)  
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
@@ -34,7 +34,7 @@ Zypher aims to revolutionize prescriptions by creating a **secure, paperless pre
 
 Our vision is to create a secure, transparent, and decentralized prescription management system that empowers doctors and patients with trust and authenticity through blockchain technology.
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
@@ -54,7 +54,7 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
 | **Deployment**     | ![Render](https://img.shields.io/badge/Render-19232D?logo=render&logoColor=white)            |
 | **Other**          | ![Web3](https://img.shields.io/badge/Web3-FF6C00?logo=ethereum&logoColor=white)             |
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
@@ -64,13 +64,13 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/Madan94/prescripto.git
+    git clone https://github.com/Madan94/zypher.git
     npm install
     ```
 
 2. **Navigate into the Project Directory**
     ```bash
-    cd prescripto
+    cd zypher
     ```
 
 3. **Start the Development Server**
@@ -78,7 +78,7 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
     npm run dev
     ```
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
@@ -86,7 +86,7 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
 
 Zypher leverages blockchain technology to ensure the security and integrity of medical prescriptions. It provides a decentralized platform where doctors can generate, sign, and manage prescriptions while patients can securely access their medical records.
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
@@ -104,18 +104,18 @@ Zypher leverages blockchain technology to ensure the security and integrity of m
 - **Patient Records:**  
   Enables patients to access their prescription history securely.
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
-## Team Zypher <a name="team-zypher"></a>
+## Team Fsociety <a name="team-zypher"></a>
 
 - **Madhanraj M** – Team Lead, Full Stack & Web3 Developer  
 - **Prieyan MN** – Backend Developer  
 - **Madesh Vaithya H** – Frontend & App Developer  
 - **Rishika K** – Research & Development  
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
@@ -123,7 +123,7 @@ Zypher leverages blockchain technology to ensure the security and integrity of m
 
 - Participated in **Avalanche Team1 Web3 Hackathon** at MCC Innovation Park, Chennai.
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
@@ -131,7 +131,7 @@ Zypher leverages blockchain technology to ensure the security and integrity of m
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/Madan94/zypher/blob/main/LICENSE) file for details.
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
@@ -144,7 +144,7 @@ For any inquiries or support, feel free to reach out:
 [![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/madhan-fullstack-developer/)  
 [![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/prieyanmn2007/)
 
-[⬆️ Back to Top](#zypher---an-upi-app-to-manage-your-crypto-payments)
+[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
 ---
 
