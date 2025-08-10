@@ -1,7 +1,6 @@
 # **Zypher** - Prescriptions on Blockchain
 
 
----
 
 ## Secure Digital Prescription System
 
@@ -26,8 +25,6 @@ Zypher aims to revolutionize prescriptions by creating a **secure, paperless pre
 - [License](#license)  
 - [Contact](#contact)  
 
-[⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
-
 ---
 
 ## Project Vision <a name="project-vision"></a>
@@ -40,7 +37,7 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
 
 ## Technologies Used <a name="technologies-used"></a>
 
-| Technology         | Logo / Badge                                                                                 |
+| Tech stack         | Technology used                                                                               |
 |--------------------|---------------------------------------------------------------------------------------------|
 | **Blockchain**     | ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white)     |
 |                    | ![Avalanche](https://img.shields.io/badge/Avalanche-E84142?logo=avalanche&logoColor=white)  |
@@ -52,6 +49,7 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
 | **Database**       | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)        |
 |                    | ![IPFS](https://img.shields.io/badge/IPFS-000000?logo=ipfs&logoColor=white)                 |
 | **Deployment**     | ![Render](https://img.shields.io/badge/Render-19232D?logo=render&logoColor=white)            |
+|                    | ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)           |
 | **Other**          | ![Web3](https://img.shields.io/badge/Web3-FF6C00?logo=ethereum&logoColor=white)             |
 
 [⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
