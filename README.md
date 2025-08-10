@@ -108,13 +108,47 @@ Zypher leverages blockchain technology to ensure the security and integrity of m
 
 ## 📸 Screenshots
 
-| Landing Page          | Role Selection         | Hospital Core         |
-|----------------------|-----------------------|----------------------|
-| ![Landing](assets/landing.jpeg) | ![Role](assets/role.jpeg) | ![Hospital Core](assets/corehos.jpeg) |
+<table>
+  <thead>
+    <tr>
+      <th>Landing Page</th>
+      <th>Role Selection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/Madan94/zypher/blob/main/assests/landing.jpeg" alt="Landing" width="500" /></td>
+      <td><img src="https://github.com/Madan94/zypher/blob/main/assests/role.jpeg" alt="Role" width="500" /></td>
+    </tr>
+  </tbody>
+  
+  <thead>
+    <tr>
+      <th>About Zypher</th>
+      <th>Pharmacy Core</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/Madan94/zypher/blob/main/assests/abtzypher.jpeg" alt="About Zypher" width="500" /></td>
+      <td><img src="https://github.com/Madan94/zypher/blob/main/assests/corephar.jpeg" alt="Pharmacy Core" width="500" /></td>
+    </tr>
+  </tbody>
+  
+  <thead>
+    <tr>
+      <th>Doctor Core</th>
+      <th>Hospital Core</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/Madan94/zypher/blob/main/assests/corepres.jpeg?raw=true" alt="Doctor Core" width="500" /></td>
+      <td><img src="https://github.com/Madan94/zypher/blob/main/assests/corehos.jpeg" alt="Hospital Core" width="500" /></td>
+    </tr>
+  </tbody>
+</table>
 
-| Pharmacy Core     | Doctor Core  |
-|----------------------|-----------------------|
-| ![Pharmacy Core](assets/corephar.jpeg) | ![Doctor Core](assets/corepres.jpeg) |
 
 
 [⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
