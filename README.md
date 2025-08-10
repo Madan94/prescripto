@@ -106,11 +106,16 @@ Zypher leverages blockchain technology to ensure the security and integrity of m
 
 ## Screenshots <a name="screenshots"></a>
 
-| ![Screenshot 1](assets/landing.jpeg) |
-![Screenshot 2](assets/role.jpeg) |
-![Screenshot 3](assets/corehos.jpeg) |
-| ![Screenshot 4](assets/corepres.jpeg) |
- ![Screenshot 5](assets/screenshot5.png) |
+## 📸 Screenshots
+
+| Landing Page          | Role Selection         | Hospital Core         |
+|----------------------|-----------------------|----------------------|
+| ![Landing](assets/landing.jpeg) | ![Role](assets/role.jpeg) | ![Hospital Core](assets/corehos.jpeg) |
+
+| Pharmacy Core     | Doctor Core  |
+|----------------------|-----------------------|
+| ![Pharmacy Core](assets/corephar.jpeg) | ![Doctor Core](assets/corepres.jpeg) |
+
 
 [⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
