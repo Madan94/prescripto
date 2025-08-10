@@ -37,8 +37,8 @@ export default function Header() {
           ))}
         </nav>
         <div className="hidden md:flex p-7">
-          <Button asChild>
-            <Link href="/">Contact us</Link>
+          <Button asChild onClick={()=>"/contact"}>
+            <Link href="/contact">Contact us</Link>
           </Button>
         </div>
         <div className="md:hidden">
