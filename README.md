@@ -1,15 +1,23 @@
 # **Zypher** - Prescriptions on Blockchain
 
+<img src="https://drive.google.com/file/d/1DV16KzYffYXOOqw4kWZyRZy8fvbYSeol/view?usp=sharing" alt="Zypher-logo" width="1200"/>
 
-
-## Secure Digital Prescription System
+## Secure Digital Prescription System for Hospitals & Pharmacies
 
 Zypher aims to revolutionize prescriptions by creating a **secure, paperless prescription system**:
 
-- Doctors generate prescriptions using their **digital signature**, preventing forgery and ensuring authenticity.  
-- Each prescription is stored on a **blockchain** for immutability and assigned a **unique ID/QR code**.  
-- Patients can access their prescriptions anytime via a secure mobile app.  
-- Pharmacies can instantly verify prescription authenticity using the unique ID/QR code, helping prevent forged or duplicate medicine dispensing.
+- Doctors generate prescriptions using their **digital signature** by their wallet, preventing forgery and ensuring authenticity.  
+- Each prescription is stored on a **IPFS Storage** which create a unique **CID** and it will based to Smart Contracts on Avalanche C-Chain.
+- Smart Contract will create a unique **Prescription ID** and Store it along with **CID**, **TimeStamp** on the block. So the prescription will eadily verified with Prescription ID and get the list from CID.
+- At last, It will genearate a **QR Code** whicjh contains Patient Wallet, Doctor Wallet and Prescription ID for Verification and Authenticity of Medicines.
+- Pharmacies will scan the QR Code and ask permission to accept the request from Patient Wallet. Once the Patient Accepted, it will be updated in Pharmacy Dashboard. 
+- Patients can access their prescriptions anytime via a secure mobile app and allow access to anyone which inidcates **Own your Data**.
+- Hopitals can see list of doctors, Edit Informations, View Prescriptions list signed by doctors having full transaparncey and Authenticity.
+
+
+## Architecture Diagram
+
+<img src="https://drive.google.com/file/d/1m8APNPopEKSysq3KkTS7cOgWI7dZfham/view?usp=drive_link" alt="Landing" width="1200" />
 
 ---
 
@@ -33,9 +41,13 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
 
 [⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
+<img src="https://drive.google.com/file/d/1h3L8Ry_qJRg3V9SyvVQ-Bvt7PMBlVERu/view?usp=sharing" alt="mobiledownload" width="1200"/>
+
 ---
 
 ## Technologies Used <a name="technologies-used"></a>
+
+<img src="https://drive.google.com/file/d/1GqtDggmzlNodttkX8rp7TI8cyH6y7bXE/view?usp=drive_link" alt="Tech Stack" width="1200"/>
 
 | Tech stack         | Technology used                                                                               |
 |--------------------|---------------------------------------------------------------------------------------------|
@@ -63,17 +75,23 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
 1. **Clone the Repository**
     ```bash
     git clone https://github.com/Madan94/zypher.git
-    npm install
+    cd zypher
     ```
 
-2. **Navigate into the Project Directory**
+2. **Dowload all the Project Dependencies**
     ```bash
-    cd zypher
+    npm install
     ```
 
 3. **Start the Development Server**
     ```bash
     npm run dev
+    ```
+4. **Backend Repo Link**
+    Repo link - https://github.com/PRIEYAN/doc-block-backend
+    ```bash
+    npm install
+    node server.js
     ```
 
 [⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
@@ -190,6 +208,12 @@ For any inquiries or support, feel free to reach out:
 - **LinkedIn:**  
 [![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/madhan-fullstack-developer/)  
 [![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/prieyanmn2007/)
+
+---
+
+<img src="https://drive.google.com/file/d/1-zjEUeWH1bwYEPqStYbi_M8MDg6R4ibK/view?usp=sharing" alt="thankyou" width="1200"/>
+
+---
 
 [⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
