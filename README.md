@@ -1,6 +1,6 @@
 # **Zypher** - Prescriptions on Blockchain
 
-<img src="https://drive.google.com/file/d/1DV16KzYffYXOOqw4kWZyRZy8fvbYSeol/view?usp=sharing" alt="Zypher-logo" width="1200"/>
+<img src="https://github.com/Madan94/zypher/blob/main/src/assets/logo.png" alt="Zypher-logo" width="600"/>
 
 ## Secure Digital Prescription System for Hospitals & Pharmacies
 
@@ -17,7 +17,7 @@ Zypher aims to revolutionize prescriptions by creating a **secure, paperless pre
 
 ## Architecture Diagram
 
-<img src="https://drive.google.com/file/d/1m8APNPopEKSysq3KkTS7cOgWI7dZfham/view?usp=drive_link" alt="Landing" width="1200" />
+<img src="https://github.com/Madan94/zypher/blob/main/src/assets/architecture.png" alt="Landing" width="1200" />
 
 ---
 
@@ -41,13 +41,13 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
 
 [⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
-<img src="https://drive.google.com/file/d/1h3L8Ry_qJRg3V9SyvVQ-Bvt7PMBlVERu/view?usp=sharing" alt="mobiledownload" width="1200"/>
+<img src="https://github.com/Madan94/zypher/blob/main/src/assets/mobiledownload.png" alt="mobiledownload" width="1200"/>
 
 ---
 
 ## Technologies Used <a name="technologies-used"></a>
 
-<img src="https://drive.google.com/file/d/1GqtDggmzlNodttkX8rp7TI8cyH6y7bXE/view?usp=drive_link" alt="Tech Stack" width="1200"/>
+<img src="https://github.com/Madan94/zypher/blob/main/src/assets/techstack.png" alt="Tech Stack" width="1200"/>
 
 | Tech stack         | Technology used                                                                               |
 |--------------------|---------------------------------------------------------------------------------------------|
@@ -88,7 +88,7 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
     npm run dev
     ```
 4. **Backend Repo Link**
-    Repo link - https://github.com/PRIEYAN/doc-block-backend
+    Repo link - [https://github.com/PRIEYAN/doc-block-backend](https://github.com/PRIEYAN/zypher-backend)
     ```bash
     npm install
     node server.js
@@ -211,7 +211,7 @@ For any inquiries or support, feel free to reach out:
 
 ---
 
-<img src="https://drive.google.com/file/d/1-zjEUeWH1bwYEPqStYbi_M8MDg6R4ibK/view?usp=sharing" alt="thankyou" width="1200"/>
+<img src="https://github.com/Madan94/zypher/blob/main/src/assets/thankyou.png" alt="thankyou" width="1200"/>
 
 ---
 
