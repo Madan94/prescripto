@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import {
   Avatar,
   Box,
@@ -15,17 +14,8 @@ import {
 import { IconListCheck, IconMail, IconUser } from "@tabler/icons-react";
 
 const Profile = () => {
-  const [anchorEl2, setAnchorEl2] = useState<HTMLElement | null>(null);
-  const router = useRouter();
-
-  useEffect(() => {
-    const token = localStorage.getItem('token') || localStorage.getItem('pharmacyToken') || localStorage.getItem('hospitalToken');
-    if (!token) {
-      router.push('/');
-    }
-  }, [router]);
-
-  const handleClick2 = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const [anchorEl2, setAnchorEl2] = useState(null);
+  const handleClick2 = (event: any) => {
     setAnchorEl2(event.currentTarget);
   };
   const handleClose2 = () => {
@@ -56,6 +46,9 @@ const Profile = () => {
           }}
         />
       </IconButton>
+      {/* ------------------------------------------- */}
+      {/* Message Dropdown */}
+      {/* ------------------------------------------- */}
       <Menu
         id="msgs-menu"
         anchorEl={anchorEl2}
@@ -78,17 +71,11 @@ const Profile = () => {
         </MenuItem>
         <Box mt={1} py={1} px={2}>
           <Button
-            href="/hospital"
+            href="/authentication/login"
             variant="outlined"
             color="primary"
             component={Link}
             fullWidth
-            onClick={() => {
-              localStorage.removeItem('token');
-              localStorage.removeItem('pharmacyToken');
-              localStorage.removeItem('hospitalToken');
-              router.push('/');
-            }}
           >
             Logout
           </Button>

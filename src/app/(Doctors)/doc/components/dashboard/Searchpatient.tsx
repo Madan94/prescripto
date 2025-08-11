@@ -4,6 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
+import PatientDetails from './PatientDetails'; 
 
 interface PatientData {
   name: string;
@@ -41,15 +42,16 @@ export default function SearchPatient() {
       // Send as JSON object, not plain string
       const response = await axios.post(
         'http://localhost:5050/doctor/prescription/getPatientDetails',
-        { mobile: numberPart },
+        { PhoneNumber: numberPart },
         { headers: { 'Content-Type': 'application/json' } }
       );
   
       if (response.status === 200 || response.status === 201) {
-        if (response.data?.success) {
+        if (response.data?.patient) {
+          const Patient = response.data?.patient;
           setSuccessMsg('Mobile number is registered with Zypher.');
-          setPatientData(response.data.data);
-          console.log(response.data.data);
+          setPatientData(response.data.patient);
+          console.log(response.data.patient);
         } else {
           setError(response.data?.message || 'Mobile number not found.');
           setPatientData(null);
@@ -115,18 +117,10 @@ export default function SearchPatient() {
       {error && <p className="text-sm text-red-500">{error}</p>}
       {successMsg && <p className="text-sm text-green-600">{successMsg}</p>}
       
-      {patientData && (
-        <div className="mt-4 p-4 bg-gray-50 rounded-lg border">
-          <h3 className="font-semibold text-lg mb-3 text-gray-800">Patient Details</h3>
-          <div className="grid grid-cols-2 gap-3 text-sm">
-            <div><span className="font-medium">Name:</span> {patientData.name}</div>
-            <div><span className="font-medium">Age:</span> {patientData.age}</div>
-            <div><span className="font-medium">Gender:</span> {patientData.gender}</div>
-            <div><span className="font-medium">Mobile:</span> {patientData.mobile}</div>
-            <div className="col-span-2"><span className="font-medium">Address:</span> {patientData.address}</div>
-          </div>
-        </div>
-      )}
+      <PatientDetails
+  status={patientData ? 'success' : error ? 'error' : 'idle'}
+  patient={patientData}
+/>
     </div>
   );
 }

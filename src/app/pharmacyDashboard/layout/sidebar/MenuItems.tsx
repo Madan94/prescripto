@@ -20,7 +20,7 @@ const Menuitems = [
     id: uniqueId(),
     title: "Dashboard",
     icon: IconLayoutDashboard,
-    href: "/pharmacyDashboard",
+    href: "/PharmacyDashboard",
   },
   {
     navlabel: true,
@@ -30,13 +30,13 @@ const Menuitems = [
     id: uniqueId(),
     title: "Scan QR Code",
     icon: IconQrcode,
-    href: "/pharmacyDashboard/utilities/qrcode",
+    href: "/PharmacyDashboard/utilities/qrcode",
   },
   {
     id: uniqueId(),
     title: "Live Prescriptions",
     icon: IconCopy,
-    href: "/pharmacyDashboard/utilities/prescription",
+    href: "/PharmacyDashboard/utilities/prescription",
   },
   {
     navlabel: true,
@@ -46,13 +46,13 @@ const Menuitems = [
     id: uniqueId(),
     title: "Manage Prescriptions",
     icon: IconLogin,
-    href: "/pharmacyDashboard/utilities/manageprescription",
+    href: "/PharmacyDashboard/utilities/manageprescription",
   },
   {
     id: uniqueId(),
     title: "Crypto Wallet",
     icon: IconWallet,
-    href: "/pharmacyDashboard/utilities/cryptowallet",
+    href: "/PharmacyDashboard/utilities/cryptowallet",
   },
   {
     navlabel: true,

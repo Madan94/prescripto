@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import Profile from './Profile';
 import { IconBellRinging, IconMenu } from '@tabler/icons-react';
-import WalletConnect from '@/app/providers';
+import WalletConnect from "@/app/providers";
 
 interface ItemType {
   toggleMobileSidebar:  (event: React.MouseEvent<HTMLElement>) => void;
