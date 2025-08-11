@@ -204,10 +204,12 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 For any inquiries or support, feel free to reach out:
 
-- **Email:** [madhanwebdev94@gmail.com](mailto:madhanwebdev94@gmail.com)  
+- **Email:** [![Email](https://img.shields.io/badge/Connect-email?logo=mail)](mailto:madhanwebdev94@gmail.com)  
 - **LinkedIn:**  
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/madhan-fullstack-developer/)  
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/prieyanmn2007/)
+**Madhanraj M** - [![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/madhan-fullstack-developer/)  
+**Prieyan M N** - [![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/prieyanmn2007/)
+  <br/>
+**Madesh Vaithya H** - [![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/madesh-vaithya-app-developer/)
 
 ---
 
