@@ -93,6 +93,13 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
     npm install
     node server.js
     ```
+5. **Android App Repo Link**
+    Repo link [https://github.com/Madan94/zyphermobile](https://github.com/Madan94/zyphermobile)
+   ```bash
+   npm install
+   npx react-native start
+   npx react-native run-android
+   ```
 
 [⬆️ Back to Top](#zypher---Prescriptions-on-Blockchain)
 
