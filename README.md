@@ -88,7 +88,7 @@ Our vision is to create a secure, transparent, and decentralized prescription ma
     npm run dev
     ```
 4. **Backend Repo Link**
-    Repo link - [https://github.com/PRIEYAN/doc-block-backend](https://github.com/PRIEYAN/zypher-backend)
+    Repo link - [https://github.com/PRIEYAN/zypher-backend](https://github.com/PRIEYAN/zypher-backend)
     ```bash
     npm install
     node server.js
